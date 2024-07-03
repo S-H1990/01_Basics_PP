@@ -42,7 +42,7 @@
 // if (isJohnOlder) {
 //     console.log("John ist älter. ")
 // }
-//     else if (isJohnEqual) {
+    // else if (isJohnEqual) {
 //     console.log("Die beiden sind gleich alt.")
 // }
 //     else{
