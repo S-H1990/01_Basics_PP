@@ -19,7 +19,14 @@ console.log("Jahr " + date.getFullYear());
 ageJohn = year - birthYearJohn;
 ageMark = year - birthYearMark;
 
-// // Ausgabe
-// console.log("ageJohn: " + ageJohn);
-// console.log("ageMark: " + ageMark);
+// Ausgabe
+console.log("ageJohn: " + ageJohn);
+console.log("ageMark: " + ageMark);
 
+// deklaration
+let istJohnOlder;//true oder false
+istJohnOlder =(ageJohn > ageMark);//test auf ungleicheit
+istJohnEqual = (ageJohn == ageMark);//test auf gleichheit
+
+console.log("istJohnOlder: " + istJohnOlder);
+console.log("istJohnequal: " + istJohnEqual);
