@@ -27,16 +27,14 @@ console.log("------------------");
 // if(true)
     
 // if(false)
-if(isJohnOlder)
-    {
-    console.log("John ist Älter.");
+// 
+
+/**if-else */
+
+if (isJohnOlder) {
+    console.log("John ist älter. ");
 
 }
-if(isJohnEqual)
-    {
-        console.log("John ist gleich Alt wie Mark. ")
-    }
-    if(isMarkOlder)
-        {
-            console.log("Mark ist Älter .")
-        }
+else{
+    console.log("john ist jünger. ")
+}
