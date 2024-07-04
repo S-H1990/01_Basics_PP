@@ -18,7 +18,7 @@ console.log("Hallo Marius! ");
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
 
-ausgabeNamen();//call
+// ausgabeNamen();//call
 // funtion
 function ausgabeNamen() {
 
@@ -28,3 +28,14 @@ function ausgabeNamen() {
 }
 
 // console.log(firstName);//fehler scope
+
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+
+ausgabeNamen2("Arian");// Argumente(von Außen) -->Daten von Parameter/ Mikrowelle beispiel mit Tasten
+ausgabeNamen2("Saba");
+
+function ausgabeNamen2(firstName) { //Parameter
+    console.log("Hallo, " + firstName + "! ");
+}
