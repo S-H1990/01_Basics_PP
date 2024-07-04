@@ -18,7 +18,7 @@ Alter 13-17 // Cola
 
 const prompt = require('prompt-sync')({sigint: true});
 let firstName = prompt("Vorname?: ");
-let age = prompt ("Alter?: ");
+let age = parseInt(prompt ("Alter?: "));
 console.log("hier is, " + firstName); 
 console.log(firstName +" is " + (age) + "years old. ");
 
