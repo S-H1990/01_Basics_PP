@@ -37,7 +37,10 @@ switch (cond) {
     case(13<= age && age <=17):
         console.log(firstName + " " +"can drink cola. ")
         break;
-    default:
+    case(age >=18):
         console.log(firstName + " " + "can drink wein! ");
+        break;
+    default:
+        console.log(firstName + " " + "can drink Tea! ");
         break;
 }
