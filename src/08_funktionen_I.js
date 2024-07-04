@@ -60,7 +60,7 @@ function ausgabeNamenParams(firstName, surName) {
 // ausgabeNamenSRP("Max","Mütze");
 
 
-ausgabeNamenSRP("Max","Mütze");
+// ausgabeNamenSRP("Max","Mütze");
 
 function ausgabeNamenSRP(firstName, familyName) {
 
@@ -73,5 +73,23 @@ function ausgabeNamenSRP(firstName, familyName) {
 }
 
 
+/***** Funktionen 03b *****/
 
+ // 1. Funktionalität: string composing
+output(getString("Max","m"));
+ function getString(firstName, surName) {
+    const GAP = " ";
+    let outputStr = "Hallo," + firstName + GAP + surName + "!";
+    return outputStr; //output der Funktion | schikt Daten an Call..
+    console.log("hi");//nach return wird der Fkt. abgebrochen
+ }
+
+
+// 2. Funktionalität: string output
+// output("hi");//String
+// output(2);//zahl
+// output(true)//Boolshe Variable
+function output(outputData) {
+    console.log(outputData);
+}
 
