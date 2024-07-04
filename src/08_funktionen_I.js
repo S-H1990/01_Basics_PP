@@ -33,9 +33,24 @@ function ausgabeNamen() {
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
 
-ausgabeNamen2("Arian");// Argumente(von Außen) -->Daten von Parameter/ Mikrowelle beispiel mit Tasten
-ausgabeNamen2("Saba");
+// ausgabeNamen2("Arian");// Argumente(von Außen) -->Daten von Parameter/ Mikrowelle beispiel mit Tasten
+// ausgabeNamen2("Saba");
 
 function ausgabeNamen2(firstName) { //Parameter
     console.log("Hallo, " + firstName + "! ");
 }
+
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+const prompt = require('prompt-sync')({sigint: true});
+ausgabeNamenParams(prompt("Vorname?: "),prompt("Name?: "));
+// ausgabeNamenParams("Max", "Mütze");
+
+function ausgabeNamenParams(firstName, surName) {
+    console.log("Hallo, " + firstName + " " + surName + "! ");
+    
+}
+
+
