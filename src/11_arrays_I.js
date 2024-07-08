@@ -70,12 +70,12 @@ hier: Aufsummierung
 
 /* Besser: mit FOR-Schleife */
 
-let a = 0; // Anfangswert
-for (let i = 0; i < 10; i++) {
-//    a = a + 1
-a += 1; 
-   output("inhalt von a: " + a);
-}
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+// //    a = a + 1
+// a += 1; 
+//    output("inhalt von a: " + a);
+// }
 
 /*
 1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
@@ -83,11 +83,11 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = ""; // Anfangswert
-for (let i = 0; i < 10; i++) {
-   str += "Test" + " "; // a = a + 1
-   output(str);
-}
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
 
 
 
@@ -156,19 +156,23 @@ function output(outputStr) {
 // // Helge Schneider: Anananandereihung ...
 
 
-// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-// function getSentenceArr2(arr) {
-//     const GAP = " ";
-//     const PUNCT = ".";
-//     let str =   
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
 
-  
+    const GAP = " ";
+    const PUNCT = ".";
+    let str =   "";
+// 1. Variante: Struktur GENAU erzeugen ...
+    for (let i = 0; i < arr.length; i++) {
+        if (i !=arr.length -1) {
+            str += arr[i] + GAP;
+        } else {
+            str +=arr[i] + PUNCT
+        }
+    // str += arr[i] + GAP;
+    // str +=arr[i] + PUNKT
+    }
+    // return str + PUNCT;
+    return str;
+}
 
-
-
-// for (let i = 0; i < arr.length; i++) 
-// {
-//    output(arr[i]); 
-// }
-// return str;
-// }
