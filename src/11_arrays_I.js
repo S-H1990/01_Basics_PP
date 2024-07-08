@@ -11,14 +11,14 @@
 let arr;
 // arr = new Array();//Konstruktor
 // arr =[];// Literal
-arr = [2,11,7,8,10];//container[],innen Elemente
+// arr = [2,11,7,8,10];//container[],innen Elemente
 
 
-output(arr);
-output(arr.length);// lengt =Anzahl der Elemmente
-output(arr[0]);//Index 0 (1. Pos. im Array)(Zeiger)immer mit 0,1,2,...
-output(arr[4]);
-output(arr[arr.length-1]);// letze Pos. / allgemein
+// output(arr);
+// output(arr.length);// lengt =Anzahl der Elemmente
+// output(arr[0]);//Index 0 (1. Pos. im Array)(Zeiger)immer mit 0,1,2,...
+// output(arr[4]);
+// output(arr[arr.length-1]);// letze Pos. / allgemein
 
 
 
@@ -55,4 +55,23 @@ function output(outputStr) {
     console.log(outputStr);
 }
 
+/*** 01a. Funktionalität mit Array 1 */
+// Kritik | Überlegung
+// word1,word2, .... wordN :: Semantische Struktur
+// arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
+// --> Transformation semantisches Problem --> numerisches Problem
 
+output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));   
+function getSentenceArr(arr) {
+        const GAP = " ";
+        const PUNCT = ".";
+        let str =   arr[0] + GAP +
+                    arr[1] + GAP +
+                    arr[2] + GAP +
+                    arr[3] + GAP +
+                    arr[4] + GAP +
+                    arr[5] +
+                    PUNCT;
+    
+        return str;
+    }
