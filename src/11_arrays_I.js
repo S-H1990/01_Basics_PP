@@ -20,9 +20,34 @@ let arr;
 // output(arr[4]);
 // output(arr[arr.length-1]);// letze Pos. / allgemein
 
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+//Inkrement (untere Grenze --> obere Grenze)
+// for (let i = 0; i < 5; i++) {  // i --> Schleifen-Index
+//     output(i);
+    
+// }
+// // Dekrement (obere Grenze --> untere Grenze)
+// for (let i = 10; i > 0; i--) {  // i --> Schleifen-Index
+//     output(i);
+
+// }
+
+
+
+// Inkrement (var. Schrittweite)
+for (let i = 10; i <= 100; i += 5) 
+{
+   output(i);   
+}
+
 
 
 /**
+ * 
+ * 
+ * 
  *   PRAXIS
  * 
  */
@@ -32,19 +57,19 @@ let arr;
 // --> "Ich bin Max Mütze."
 // output(getSentence("Ich","bin","die","coole","Maxine","Mützerich",));
 // output(getSentence("Ich","bin","die","coole","Maxine","Mützerich"));
-function getSentence(word1,word2,word3,word4,word5,word6) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   word1 + GAP +
-                word2 + GAP +
-                word3 + GAP +
-                word4 + GAP +
-                word5 + GAP +
-                word6 +
-                PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   word1 + GAP +
+//                 word2 + GAP +
+//                 word3 + GAP +
+//                 word4 + GAP +
+//                 word5 + GAP +
+//                 word6 +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
 
 
@@ -61,7 +86,7 @@ function output(outputStr) {
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation semantisches Problem --> numerisches Problem
 
-output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));   
+// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));   
 function getSentenceArr(arr) {
         const GAP = " ";
         const PUNCT = ".";
