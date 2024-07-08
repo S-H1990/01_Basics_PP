@@ -162,7 +162,7 @@ function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
     let str =   "";
-// 1. Variante: Struktur GENAU erzeugen ...
+// 1. Variante: Iteration:Struktur GENAU erzeugen ...
     for (let i = 0; i < arr.length; i++) {
         if (i !=arr.length -1) {
             str += arr[i] + GAP;
