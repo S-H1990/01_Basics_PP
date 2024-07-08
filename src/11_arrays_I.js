@@ -163,16 +163,22 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str =   "";
 // 1. Variante: Iteration:Struktur GENAU erzeugen ...
-    for (let i = 0; i < arr.length; i++) {
-        if (i !=arr.length -1) {
-            str += arr[i] + GAP;
-        } else {
-            str +=arr[i] + PUNCT
-        }
-    // str += arr[i] + GAP;
-    // str +=arr[i] + PUNKT
-    }
-    // return str + PUNCT;
-    return str;
-}
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i !=arr.length -1) {
+//             str += arr[i] + GAP;
+//         } else {
+//             str +=arr[i] + PUNCT
+//         }
+//     // str += arr[i] + GAP;
+//     // str +=arr[i] + PUNKT
+//     }
+//     // return str + PUNCT;
+//     return str;
+// }
 
+ // // 2. Iteration: Struktur erzeugen + trimmen()
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i] + GAP; // entweder ..
+    }
+return str.trim() + PUNCT;
+}
