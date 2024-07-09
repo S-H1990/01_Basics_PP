@@ -186,11 +186,5 @@ function getSentenceArr2(arr) {
 
    // 3. Variante: Ausnutzen von generischen Fuktionen ...
    return arr.join(GAP) + PUNCT;
-
-
-
-
-
-
-
+   
 }
