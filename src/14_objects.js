@@ -30,12 +30,31 @@
 
 // /***** Objekte 1 Daten/Funktionen *******/
 
+let person ={
+                firstName:"Sara",
+                familyName:"Sarita",
+                salary:[120000,160000],
+                permission: true,
+                sayHello: function(){
+                    // return "Hallo!"
+                    return "Hallo, ich bin " + this.firstName +" " + this.familyName;
+                }
+        };
 
-
-
-
+output(person);
+output(person.firstName);
+output(person.familyName);
+output(person.salary[1]);
+output(person.permission);
+output(person.sayHello());
 // // Modul: Ausgabe | Test
 // //output("hi");
-// function output(outputData) {
-//     console.log(outputData);
-// }
+function output(outputData) {
+    console.log(outputData);
+}
+// const txt = person.sayHello() + ", ich bin " + person.firstName +
+//             " und verdiene " + person.salary[1] + " p.a."
+
+            const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a."
+
+output(txt);
